@@ -1,0 +1,730 @@
+/* propiedades de posicionamiento */
+/* propiedades del box model */
+/* propiedades de texto */
+/* propiedades visuales */
+/* el resto de propiedades */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    /* box-sizing: border-box; */
+    list-style:none;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --header_height:100px;
+
+    --color_1:#00ADB5;
+    --color_2:#393E46;
+    --color_3:#222831;
+    --color_4:#EEEEEE;
+
+    --open_close: none;
+
+    --animacion_nombre: ;
+    --animacion_tiempo: ;
+
+    --animacion_prueba: ;
+
+    
+    --altura-container: 80vh ;
+    --ancho-caja: 30vw;
+    --alto-caja: 30vh;
+    --ancho-icono: 100px ;
+    --alto-icono: 100px ;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 100;
+
+    width: 100vw;
+    height: var(--header_height);
+
+    background-color: var(--color_3) ;
+    color: var(--color_1);
+    
+}
+
+.boton-main{
+    position: relative;
+    left: 30px;
+
+    width: 33%;
+    height: 100%;
+    padding-top: 18px;
+
+    color: var(--color_1);
+    font-size: 80px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.boton-main:hover{
+    font-size: 82px;
+}
+
+.title{
+    width: 33%;
+
+    text-align: center;
+    font-size: 50px;
+    animation: var(--animacion_nombre) 2s ;
+}
+.title:hover{
+    cursor: pointer;
+}
+
+
+@keyframes tituloVaVuelve {
+    0%{transform: translateY(0%);}
+    50%{transform: translateY(-200%);}
+    100%{transform: translateY(0%);}
+}
+
+
+
+
+.navigation{
+    display: flex;
+    align-items: flex-end;
+
+    width: 33%;
+    height: 100%;
+
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    display: flex;
+    justify-content: center;
+
+    margin: 10px;
+}
+
+.menu li a:first-child{
+    position: relative;
+    top: 4px;
+
+    margin-right: 5px;
+
+    color: var(--color_1);
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.menu li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color_1);
+}
+
+
+.menu li a:first-child:hover{
+    font-size: 1.1rem;
+}
+
+
+.nav__theme{
+    position: absolute;
+    left: 120px;
+    top: calc(var(--header_height) - 34px);
+
+    cursor: pointer;
+}
+
+.nav__theme-sun{
+    display: none;
+}
+
+.boton-responsive{
+    display: none;
+}
+
+.retorno-responsive{
+    display: none;
+}
+
+ 
+
+
+
+
+
+
+
+.main .first-window{
+    width: 100vw - 10px;
+    height: 100vh;
+}
+
+.main .second-window{
+    width: 100vw - 10px;
+    height: 100vh;
+}
+
+.main .third-window{
+    width: 100vw - 10px;
+    height: 100vh;
+}
+
+.main .fourth-window{
+    width: 100vw - 10px;
+    height: 100vh;
+}
+
+.first-window{
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--color_3);
+
+}
+.second-window{
+    padding-top: 100px;
+    background-color: var(--color_2);
+}
+.third-window{
+    background-color: var(--color_1)
+}
+.fourth-window{
+    background-color: var(--color_4);
+}
+
+
+
+
+
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--color_3);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--color_1);
+    border-radius: 5px;
+}
+
+
+
+
+.first-window__img{
+    width: 48vw;
+    margin-top: 200px;
+    transition: width 0.2s;
+}
+
+
+.first-window__presentation{
+    margin-top: 100px;
+    color: var(--color_1);
+    width: 40vw;
+
+    margin: auto;
+
+    font-size: 3rem;
+
+    transition: all 0.2s;
+}
+
+.presentation-hello{
+    font-size: 4rem;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+
+.first-window__presentation:hover{
+    font-size: 3.2rem;
+    width: 42vw;
+}
+
+
+.presentation-hello:hover{
+    font-size: 4.2rem;
+    width: 42vw;
+}
+
+.first-window__img:hover{
+    width: 50vw;
+}
+
+
+
+
+
+
+
+
+
+
+.second-window h2{
+    color:#00ADB5;
+    font-size: 4rem;
+    padding-left: 10vw;
+}
+
+.second-window p:nth-child(2){
+    color:#00ADB5;
+    padding-left: calc(10vw + 50px);
+
+    font-size: 2rem;
+}
+
+
+
+
+
+/* este codigoe s el que se encarga de las animaciones de los trabajos */
+
+.animacion_leaves{
+    animation: leaves 1s forwards;
+}
+
+.animacion_leaves_off{
+    animation: leaves_off 1s forwards;
+}
+
+.animacion_rotate{
+    animation: rotate 1s forwards;
+}
+
+.animacion_rotate_off{
+    animation: rotate 1s forwards;
+}
+
+.animacion_rotate_2{
+    animation: rotate_2 1s forwards;
+}
+
+.animacion_rotate_2_off{
+    animation: rotate_2 1s forwards;
+}
+
+@keyframes leaves_off{ 
+    0%{ transform: translateY(-100%);}
+    100%{ transform: translateY(0%);}
+}
+
+@keyframes leaves{ 
+    0%{ transform: translateY(0%);}
+    100%{ transform: translateY(-100%);}
+}
+    
+
+@keyframes rotate{
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(180deg);}
+}
+
+@keyframes rotate_2{
+    0%{transform: rotateY(180deg);}
+    100%{transform: rotateY(0deg);}
+}
+    
+
+
+.jobs_container{
+    display: flex;
+    
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    height: var(--altura-container);
+}
+
+
+
+.jobs_container div{
+    position: relative;
+
+    width: var(--ancho-caja);
+    height: var(--alto-caja);
+
+    margin: auto;
+
+    border-radius: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.jobs_container div img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.jobs_container div img:first-child{
+    object-fit: cover;
+
+    z-index: 50;
+    backface-visibility: hidden;
+}
+
+
+.jobs_container div img:nth-child(2){
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 60;
+    padding-left: calc(50% - var(--ancho-icono) / 2);
+    padding-right: calc(50% - var(--ancho-icono) / 2);
+
+    padding-top: calc((var(--alto-caja) / 2) - var(--ancho-icono) / 2);
+    padding-bottom: calc((var(--alto-caja) / 2) - var(--ancho-icono) / 2);
+
+    width: var(--ancho-icono);
+    height: var(--alto-icono);
+}
+
+
+
+.jobs_container div div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.jobs_container div div:nth-child(3){
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 80;
+    cursor: pointer;
+}
+
+
+.jobs_container div div:nth-child(4){
+    background-color:var(--color_3);
+    color: var(--color_1);
+
+    z-index: 40;
+    transform: rotateY(180deg);
+
+    backface-visibility: hidden;
+}
+
+.jobs_container div div:nth-child(4) p{
+    padding: 20px;
+    text-align: center;
+}
+
+.jobs_container div div:nth-child(4) p:nth-child(1){
+    font-size: 1.3rem;
+}
+
+.jobs_container div div:nth-child(4) p:nth-child(2){
+    padding-top: 0;
+    color: var(--color_1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px){
+
+.navigation{
+    display: var(--open_close);
+    position: absolute;
+    right: 0px;
+    top: 0;
+
+    width: 150px;
+    height: 100vh;
+
+    background-color: var(--color_3);
+
+}
+.menu{
+    position: relative;
+    top: 20px;
+
+    justify-content: flex-start;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.menu li{
+    height: 40px;
+}
+
+.title{
+    width: 60%;
+}
+
+.boton-main{
+    width: 20%;
+}
+
+.boton-responsive{
+    display: inline-block;
+
+    width: 20%;
+    padding-right: 20px;
+    text-align: right;
+
+    font-size: 50px;
+
+    cursor: pointer;
+}
+
+.retorno-responsive{
+    display: var(--open_close);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: calc(100vw - 150px);
+
+    background-color: rgba(0, 0, 0, 0);   
+}
+
+
+
+
+.first-window__presentation{
+    font-size: 2rem;
+}
+
+.presentation-hello{
+    font-size: 3rem
+}
+
+
+.first-window__presentation:hover{
+    font-size: 2.2rem;
+}
+
+
+.presentation-hello:hover{
+    font-size: 3.2rem;
+}
+
+
+
+
+
+.jobs_container div div:nth-child(4) p:nth-child(1){
+    font-size: 1rem;
+}
+
+.jobs_container div div:nth-child(4) p:nth-child(2){
+    padding-top: 0;
+    font-size: 1.5rem;
+    color: var(--color_1);
+}
+
+
+}
+
+
+@media screen and (max-width: 670px){
+
+
+:root{
+    --ancho-caja: 45vw;
+    --alto-caja: 26vh;
+}
+
+
+.boton-main{
+    font-size: 50px;
+    left: 10px;
+
+    padding-top: 46px;
+}
+
+.nav__theme{
+    left: 60px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.boton-responsive{
+    font-size: 40px;
+}
+
+
+
+
+
+
+.first-window{
+    flex-direction: column;
+    align-items: flex-end;
+}
+.first-window__presentation{
+    font-size: 1rem;
+    margin-top: 120px;
+    width: 80vw;
+    height:  25vh;
+}
+
+.presentation-hello{
+    font-size: 1.5rem
+}
+
+
+.first-window__presentation:hover{
+    font-size: 1.1rem;
+    width: 92vw;
+}
+
+
+.presentation-hello:hover{
+    font-size: 1.7rem;
+}
+
+
+
+.first-window__img{
+    width: 90vw;
+    height:  40vh;
+    margin: auto;
+}
+
+
+
+.first-window__img:hover{
+    width: 92vw;
+}
+
+
+
+
+
+
+
+
+.second-window h2{
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+.second-window p:nth-child(2){
+    padding-left: 40px;
+    font-size: 1rem;
+
+    margin-bottom: 10px;
+}
+
+
+
+
+.jobs_container div div:nth-child(4) p{
+    padding: 5px;
+}
+
+
+.jobs_container div div:nth-child(4) p:nth-child(1){
+    font-size: 1rem;
+}
+
+.jobs_container div div:nth-child(4) p:nth-child(2){
+    font-size: 1.2rem;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
