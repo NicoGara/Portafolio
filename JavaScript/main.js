@@ -11,7 +11,7 @@ button_sun.addEventListener("click",()=>{
     root.style.setProperty("--color_3","#222831")
     root.style.setProperty("--color_1","#00ADB5")
 
-    first_img.setAttribute("src","/assets/images/undraw_programming_re_kg9v.svg")
+    first_img.setAttribute("src","assets/images/undraw_programming_re_kg9v.svg")
 })
 
 button_moon.addEventListener("click",()=>{
@@ -21,7 +21,7 @@ button_moon.addEventListener("click",()=>{
     root.style.setProperty("--color_1","#222831")
     root.style.setProperty("--color_3","#00ADB5")
 
-    first_img.setAttribute("src","/assets/images/undraw_programming_re_kg9v_2.svg")
+    first_img.setAttribute("src","assets/images/undraw_programming_re_kg9v_2.svg")
 })
 
 
