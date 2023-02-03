@@ -96,8 +96,10 @@ const jobs_container=document.querySelector(".jobs_container")
 
 console.dir(jobs_container.children)
 
-for (const i of jobs_container.children) {
 
+
+for (const i of jobs_container.children) {
+    let indication = ""
     i.addEventListener("click",()=>{
         console.dir(i.className);
 
@@ -109,14 +111,19 @@ for (const i of jobs_container.children) {
 
     i.addEventListener("mouseover",(e)=>{
         i.children[1].classList.add("animacion_leaves")
-
         setTimeout(()=>{
-            i.children[0].classList.add("animacion_rotate")
-            i.children[3].classList.add("animacion_rotate_2")
+            // window.getComputedStyle(i.children[1]).transform == "matrix(1, 0, 0, 1, 0, -291)" me indica cuando se realiza la animacion de traslacion completa, entonces hasta que no se realice la misma no dejo que continue.
+            if (window.getComputedStyle(i.children[1]).transform == "matrix(1, 0, 0, 1, 0, -291)") {
+                i.children[0].classList.add("animacion_rotate")
+                i.children[3].classList.add("animacion_rotate_2")
+                indication = "llego"
+            }
         }, 1000 ) 
     });
 
+    
     i.addEventListener("mouseout",()=>{
+        if (indication == "llego") {
         i.children[1].classList.remove("animacion_leaves")
         i.children[1].classList.add("animacion_leaves_off")
         setTimeout(()=>{
@@ -134,8 +141,26 @@ for (const i of jobs_container.children) {
                 i.children[3].classList.remove("animacion_rotate")
             }, 1000 ) 
         }, 1000 ) 
+
+        } else{
+        setTimeout(()=>{
+            i.children[1].classList.remove("animacion_leaves")
+                i.children[0].classList.remove("animacion_rotate")
+                i.children[3].classList.remove("animacion_rotate_2")
+            }, 0 ) 
+        }
+
+
+        indication=""
     });
 }
 
 
-
+const datosDeContacto= document.getElementById("datosDeContacto")
+window.addEventListener("resize",()=>{
+    if (window.screen.width<1400) {
+        datosDeContacto.textContent="Datos contacto"
+    }else{
+        datosDeContacto.textContent="Datos de contacto"
+    }
+})

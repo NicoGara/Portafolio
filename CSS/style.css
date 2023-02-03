@@ -635,7 +635,130 @@ body::-webkit-scrollbar-thumb{
 }
 
 
+
+
+.third-window .box-img img{
+    width: 300px;
+    height: 300px;
+
 }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px){
+
+
+    .third-window .box-img img{
+        width: 250px;
+        height: 250px;
+    
+    }
+    .third-window .box-extra p{
+        font-size: 1.3rem;
+    }
+    
+    .third-window h2{
+        font-size: 2.5rem;
+    }
+    
+    .third-window h3{
+        font-size: 2rem;
+    }
+    
+    .third-window li{
+        font-size: 1.3rem;
+    }
+
+    .third-window .box-extra{
+        margin-top: 230px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 850px){
+
+
+    .third-window .box-img img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20%;
+    }
+    .third-window .box-extra p{
+        font-size: 1.1rem;
+    }
+    
+    .third-window h2{
+        font-size: 2rem;
+    }
+    
+    .third-window h3{
+        font-size: 1.6rem;
+    }
+    
+    .third-window li{
+        font-size: 1.1rem;
+    }
+
+    .third-window .box-extra{
+        margin-top: 230px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 670px){
@@ -745,6 +868,77 @@ body::-webkit-scrollbar-thumb{
 .jobs_container div div:nth-child(4) p:nth-child(2){
     font-size: 1.2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+.third-window h2{
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.third-window h3{
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.third-window li{
+    font-size: 0.8rem;
+    margin-left:40px;
+}
+
+.third-window .box-img{
+    width: 100%;
+    height: 120px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.third-window .box-img img{
+    border-radius: 50%;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    
+}
+
+
+
+.third-window .box-data{
+     width: 95%;
+     height: auto;
+}
+
+.third-window .box-data h3{
+    margin-top: 6px;
+}
+
+
+
+
+.third-window .box-extra{
+    margin-top: 12px;
+}
+
+.third-window .box-extra p{
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
 
 
 
