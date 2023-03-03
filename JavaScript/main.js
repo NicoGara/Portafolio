@@ -164,3 +164,47 @@ window.addEventListener("resize",()=>{
         datosDeContacto.textContent="Datos de contacto"
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const funcion= (value)=>{
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve({
+//                 value,
+//                 result: value*value
+//         })
+//         }, 0|Math.random()*1000);
+//     })
+// }
+
+// funcion(0)
+// .then((obj)=>{
+//     console.log(obj);
+//     return obj
+// })
+// .then((obj)=>{
+
+//     if (obj.result=="0") {
+//         console.log("probando");
+//     }
+// })
+// .catch();

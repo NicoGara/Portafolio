@@ -156,12 +156,43 @@
         </div>
 
         <div class="fourth-window" id="fourth-window">
-            <h3>Datos de contacto:</h3>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            
+            <div class="fourth-div fourth-div-first">
+                <h3>Mis datos de contacto:</h3>
+                <ul>
+                    <li>Nombre completo: Nicolas Ezequiel Garavaglia</li>
+                    <li>Mail: nicolasgaravaglia@hotmail.com</li>
+                    <li>Telefono: 1136393954</li>
+                </ul>
+            </div>
+            <div class="fourth-div fourth-div-second">
+                <a href="mailto:nicolasgaravaglia@hotmail.com" > Contactar por mail</a>
+            </div>
+            <div class="fourth-div fourth-div-third">
+                <h4>O enviame un mensaje:</h4>
+                <form action="mailto:nicolasgaravaglia@hotmail.com">
+
+                    <div>
+                        <label for="">Nombre:</label>
+                        <input name="nombre" type="text">
+                    </div>
+                    <div>
+                        <label for="">Mail:</label>
+                        <input name="mail" type="email">
+                    </div>
+                    <div>
+                        <label for="">Telefono:</label>
+                        <input name="nombre" type="text">
+                        <span>* Opcional</span>
+                    </div>
+                    <div>
+                        <label for="">Mensaje:</label>
+                        <textarea name="mensaje"  id="mensaje" required="obligatorio" placeholder="Deja aquí tu mensaje..."></textarea> 
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </div>
+            
         </div>
         
     </main>
