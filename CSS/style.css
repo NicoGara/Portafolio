@@ -1080,6 +1080,86 @@ body::-webkit-scrollbar-thumb{
 
 
 
+.fourth-div-first h3{
+    font-size: 30px;
+}
+.fourth-div-first li{
+    height: 60px;
+    font-size: 20px;
+    
+}
+
+
+
+.fourth-div-second{
+    height: 7%;
+}
+.fourth-div-second a{
+    font-size: 20px;
+}
+
+
+
+.fourth-div-third{
+    height: 56%;
+}
+
+.fourth-div-third h4{
+    font-size: 30px;
+}
+
+.fourth-div-third form{
+    font-size: 20px;
+}
+
+.fourth-div-third form div{
+    margin-left: 10%;
+}
+
+
+.fourth-div-third form input{
+    margin: 15px;
+}
+
+.fourth-div-third form input{
+   height: 40px;
+   width: 60%;
+
+   font-size: 30px;
+}
+
+.fourth-div-third form div:nth-child(3){
+    position: relative;
+}
+.fourth-div-third form span{
+    font-size: 10px;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+}
+
+
+
+.fourth-div-third form textarea{
+    font-size: 15px;
+
+    height: 160px;
+    width: 60%;
+
+    margin-left: 20px;
+}
+
+.fourth-div-third form button{
+    font-size: 20px;
+ }
+
+
+
+
+
+
+
+
 }
 
 
