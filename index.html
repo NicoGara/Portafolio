@@ -8,7 +8,7 @@
 
     <!-- link de google icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link rel="shortcut icon" href="assets/favicons/logo_2.png">
 
 
     <link rel="stylesheet" href="CSS/style.css">
@@ -160,36 +160,29 @@
             <div class="fourth-div fourth-div-first">
                 <h3>Mis datos de contacto:</h3>
                 <ul>
-                    <li>Nombre completo: Nicolas Ezequiel Garavaglia</li>
+                    <li>Nombre: Nicolas Ezequiel Garavaglia</li>
                     <li>Mail: nicolasgaravaglia@hotmail.com</li>
                     <li>Telefono: 1136393954</li>
                 </ul>
             </div>
-            <div class="fourth-div fourth-div-second">
-                <a href="mailto:nicolasgaravaglia@hotmail.com" > Contactar por mail</a>
-            </div>
             <div class="fourth-div fourth-div-third">
                 <h4>O enviame un mensaje:</h4>
-                <form action="mailto:nicolasgaravaglia@hotmail.com">
+                <form action="https://formsubmit.co/nicolasgaravaglia@hotmail.com" method="POST" target="_blank">
 
                     <div>
-                        <label for="">Nombre:</label>
-                        <input name="nombre" type="text">
+                        <input name="nombre" type="text" placeholder="Escribe tu Nombre" title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
                     </div>
                     <div>
-                        <label for="">Mail:</label>
-                        <input name="mail" type="email">
+                        <input name="mail" type="email" placeholder="Escribe tu correo"  title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
                     </div>
                     <div>
-                        <label for="">Telefono:</label>
-                        <input name="nombre" type="text">
-                        <span>* Opcional</span>
+                        <input  type="titulo" class="formulario_input" name="titulo" placeholder="Titulo"  title="El asunto es requerido" required>
                     </div>
                     <div>
-                        <label for="">Mensaje:</label>
-                        <textarea name="mensaje"  id="mensaje" required="obligatorio" placeholder="Deja aquí tu mensaje..."></textarea> 
+                        <textarea name="mensaje"  id="mensaje" type="mensaje" class="formulario_input" placeholder="Deja aquí tu mensaje..." cols="30" rows="10" data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres" required></textarea> 
                     </div>
                     <button>Enviar</button>
+                    <span class="form_span_adv">*Para enviar el mensaje lo va a enviar a otra pagina donde tiene que aceptar que no es un robot 😁</span>
                 </form>
             </div>
             
@@ -198,6 +191,6 @@
     </main>
 
     
-    <script src="JavaScript/main.js"></script>
+    <script src="main.js" type="module"></script>
 </body>
 </html>

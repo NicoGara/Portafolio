@@ -173,24 +173,25 @@ html{
 
     background-color: var(--color_3);
 
-    padding-top: 100px;
+    padding: var(--header_height) 0;
     width: 100vw - 10px;
     height: 90vh;
 
 }
 .second-window{
-    padding-top: 100px;
+    padding: var(--header_height) 0;
     background-color: var(--color_2);
 
     
     width: 100vw - 10px;
-    height: 90vh;
+    height: auto;
 }
 .third-window{
     width: 100vw - 10px;
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;
     background-color: var(--color_1);
-    padding-top: 100px;
+    padding: var(--header_height) 0;
 
     color: var(--color_3);
 
@@ -201,10 +202,10 @@ html{
 }
 .fourth-window{
     background-color: var(--color_4);
-    padding-top: 100px;
+    padding: var(--header_height) 0;
     
     width: 100vw - 10px;
-    height: 90vh;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -355,18 +356,18 @@ body::-webkit-scrollbar-thumb{
 
     width: 100%;
 
-    height: var(--altura-container);
+    height:auto;
 }
 
 
 
 .jobs_container div{
-    position: relative;
 
+    min-width: 400px;
     width: var(--ancho-caja);
     height: var(--alto-caja);
 
-    margin: auto;
+    margin: 20px auto ;
 
     border-radius: 20px;
 
@@ -498,7 +499,7 @@ body::-webkit-scrollbar-thumb{
 
 .third-window .box-data{
     width: 70%;
-    height: 500px;
+    height: auto;
 }
 
 .third-window .box-data h3{
@@ -509,9 +510,8 @@ body::-webkit-scrollbar-thumb{
 
 
 .third-window .box-extra{
-    margin-top: 170px;
-    height: 400px;
     width: 100%;
+    padding: 10px;
 }
 
 .third-window .box-extra p{
@@ -523,19 +523,30 @@ body::-webkit-scrollbar-thumb{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .fourth-div-first{
-    height: 28%;
+    height: auto;
 
     display: flex;
     flex-direction: column;
 }
 
 .fourth-div-first h3{
-    height: 60px;
-    font-size: 50px;
+    height: auto;
+    font-size: 60px;
+    margin-bottom: 20px;
 
-    margin-top: -20px;
-    margin-bottom: 10px;
 }
 .fourth-div-first li{
     height: 60px;
@@ -545,10 +556,8 @@ body::-webkit-scrollbar-thumb{
 
 
 
-.fourth-div-second{
-    height: 7%;
-}
-.fourth-div-second a{
+
+form[target="_blank"] button{
     font-size: 30px;
     padding: 10px 20px;
 
@@ -559,8 +568,9 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--color_3);
 
     border-radius: 20px;
-}
 
+    margin-top: 20px;
+}
 
 
 .fourth-div-third{
@@ -576,20 +586,17 @@ body::-webkit-scrollbar-thumb{
 }
 
 .fourth-div-third form div{
-    margin-left: 30%;
-    text-align: left;
+    margin: auto;
 }
 
 
-.fourth-div-third form input{
-    margin: 15px;
-}
 
 .fourth-div-third form input{
    height: 50px;
    width: 40%;
 
-   font-size: 30px;
+   font-size: 23px;
+   margin: 15px;
 }
 
 
@@ -602,34 +609,22 @@ body::-webkit-scrollbar-thumb{
 
 .fourth-div-third form textarea{
     font-size: 20px;
-
-    height: 160px;
     width: 40%;
-
-    margin-left: 20px;
-}
-
-.fourth-div-third form div:nth-child(4){
-    display: flex;
-    flex-direction: row;
-}
-
-
-.fourth-div-third form button{
-    font-size: 30px;
-    height: 50px;
-
-    width: 100px ;
-
-    border-radius: 10px;
-  
+    height: 160px;
     
-    color: var(--color_1);
+    resize: none;
 
-    background-color: var(--color_3);
+    margin: auto;
+}
 
-    margin-top: 10px;
- }
+.form_span_adv{
+    display: block;
+    font-size: 1rem;
+}
+
+
+
+
 
 
 
@@ -829,9 +824,13 @@ body::-webkit-scrollbar-thumb{
         font-size: 1.3rem;
     }
 
-    .third-window .box-extra{
-        margin-top: 230px;
-    }
+
+    .fourth-div-third form input,
+    .fourth-div-third form textarea{
+        width: 60%;
+        font-size: 17px;
+     }
+
 }
 
 
@@ -877,9 +876,6 @@ body::-webkit-scrollbar-thumb{
         font-size: 1.1rem;
     }
 
-    .third-window .box-extra{
-        margin-top: 230px;
-    }
 }
 
 
@@ -929,7 +925,10 @@ body::-webkit-scrollbar-thumb{
 
 
 
+.jobs_container div{
 
+    min-width: 320px;
+}
 
 
 .first-window{
@@ -938,7 +937,7 @@ body::-webkit-scrollbar-thumb{
 }
 .first-window__presentation{
     font-size: 1rem;
-    margin-top: 120px;
+    margin: auto;
     width: 80vw;
     height:  25vh;
 }
@@ -1051,7 +1050,6 @@ body::-webkit-scrollbar-thumb{
 
 .third-window .box-data{
      width: 95%;
-     height: auto;
 }
 
 .third-window .box-data h3{
@@ -1112,48 +1110,18 @@ body::-webkit-scrollbar-thumb{
     font-size: 20px;
 }
 
-.fourth-div-third form div{
-    margin-left: 10%;
-}
-
-
-.fourth-div-third form input{
-    margin: 15px;
-}
-
-.fourth-div-third form input{
-   height: 40px;
-   width: 60%;
-
-   font-size: 30px;
-}
-
-.fourth-div-third form div:nth-child(3){
-    position: relative;
-}
-.fourth-div-third form span{
-    font-size: 10px;
-    position: absolute;
-    left: 0px;
-    top: 50px;
-}
 
 
 
-.fourth-div-third form textarea{
-    font-size: 15px;
-
-    height: 160px;
-    width: 60%;
-
-    margin-left: 20px;
-}
 
 .fourth-div-third form button{
-    font-size: 20px;
+    font-size: 15px;
  }
 
-
+ .fourth-div-third form input,
+ .fourth-div-third form textarea{
+     width: 80%;
+  }
 
 
 
