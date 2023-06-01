@@ -8,8 +8,10 @@ export default function validacionFormulario(formClass) {
     $inputs = d.querySelectorAll(`${formClass} [required]`)
 
     console.log($inputs);
-
+    
     $inputs.forEach(input => {
+        
+        
         const $span=d.createElement("span")
         $span.id=input.name;
         $span.textContent=input.title;
@@ -41,19 +43,15 @@ export default function validacionFormulario(formClass) {
 
     d.addEventListener("submit",e=>{
         e.preventDefault();
-        alert("enviando formulario")
 
         const $loader=d.querySelector(".contact-form-loader"),
         $response=d.querySelector(".contact-form-response")
 
         $loader.classList.remove("none")
+        console.log(e.target);
 
         fetch("https://formsubmit.co/ajax/nicolasgaravaglia@hotmail.com",{
             method: "POST",
-            headers: { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
             body:new FormData(e.target)
         })
          .then(res=>res.json())
