@@ -617,14 +617,13 @@ form[target="_blank"] button{
     margin: auto;
 }
 
-.form_span_adv{
-    display: block;
-    font-size: 1rem;
+.contact-form-loader{
+    padding-top: 20px;
 }
 
-
-
-
+.none{
+    display: none;
+}
 
 
 

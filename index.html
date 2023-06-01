@@ -167,7 +167,7 @@
             </div>
             <div class="fourth-div fourth-div-third">
                 <h4>O enviame un mensaje:</h4>
-                <form action="https://formsubmit.co/nicolasgaravaglia@hotmail.com" method="POST" target="_blank">
+                <form action="https://formsubmit.co/nicolasgaravaglia@hotmail.com" method="POST" target="_blank" class="formulario_mail">
 
                     <div>
                         <input name="nombre" type="text" placeholder="Escribe tu Nombre" title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
@@ -182,7 +182,11 @@
                         <textarea name="mensaje"  id="mensaje" type="mensaje" class="formulario_input" placeholder="Deja aquí tu mensaje..." cols="30" rows="10" data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres" required></textarea> 
                     </div>
                     <button>Enviar</button>
-                    <span class="form_span_adv">*Para enviar el mensaje lo va a enviar a otra pagina donde tiene que aceptar que no es un robot 😁</span>
+
+                    <div class="contact-form-loader none">
+                        <img  src="assets/otros/loader/spinning-circles.svg" />
+                    </div>
+                    <p class="contact-form-response none" id="formulario_texto_exito">formulario enviado de manera correcta</p>
                 </form>
             </div>
             
